@@ -1,0 +1,30 @@
+{
+  "name": "trpc-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/trpc-backend/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "trpc-backend:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "trpc-backend:build:development"
+        },
+        "production": {
+          "buildTarget": "trpc-backend:build:production"
+        }
+      }
+    },
+    "build": {
+      "options": {
+        "generatePackageJson": true
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "trpc-poc",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/trpc-poc",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project trpc-poc --web",
+  "targets": {}
+}
